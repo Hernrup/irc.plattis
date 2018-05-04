@@ -1,0 +1,13 @@
+version: '3.2'
+services:
+    irc:
+        image: plattis/irc:latest
+        build:
+            context: .
+        environment:
+            - cool=True
+        ports:
+            - 6667:6667
+volumes:
+   stuff:
+        driver: local
